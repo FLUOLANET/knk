@@ -17,8 +17,8 @@ int main(void) {
     float after_second = after_first * coeff - mon_pay;
     float after_third = after_second * coeff - mon_pay;
 
-    printf("Balance remaining after first payment: %.2f\n", after_first);
-    printf("Balance remaining after second payment: %.2f\n", after_second);
-    printf("Balance remaining after third payment: %.2f\n", after_third);
+    printf("Balance remaining after first payment: $%.2f\n", after_first);
+    printf("Balance remaining after second payment: $%.2f\n", after_second);
+    printf("Balance remaining after third payment: $%.2f\n", after_third);
     return 0;
 }

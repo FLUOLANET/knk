@@ -16,6 +16,3 @@ int main(void){
     printf("%.2f\n", y);
     return 0;
 }
-
-// pow 함수이름?
-// 함수 안쓰고??
