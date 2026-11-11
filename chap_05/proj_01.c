@@ -7,16 +7,16 @@ int main(void) {
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if(num > 0 && num < 10) {
+    if(num >= 0 && num < 10) {
         digit = 1;
     }
-    else if(num > 9 && num < 100) {
+    else if(num < 100) {
         digit = 2;
     }
-    else if(num > 99 && num < 1000) {
+    else if(num < 1000) {
         digit = 3;
     }
-    else if(num > 999 && num < 10000) {
+    else if(num < 10000) {
         digit = 4;
     }
     

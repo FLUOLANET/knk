@@ -9,7 +9,9 @@ int main(void) {
     
     first_sum = d + i2 + i4 + i6 + i8 + i10;
     second_sum = i1 + i3 + i5 + i7 +i9;
-    total = first_sum * 3 + second_sum - 1;
+
+    // 전부 0일때 결과 -1 나오는거 방지하지 위해 10 더함.
+    total = first_sum * 3 + second_sum - 1 + 10;
     total %= 10;
     total = 9 - total;
 

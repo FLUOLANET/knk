@@ -9,7 +9,8 @@ int main(void) {
 
     sum1 = n2 + n4 + n6 + n8 +n10 + n12;
     sum2 = n1 + n3 + n5 + n7 + n9 + n11;
-    total = sum1 * 3 + sum2 - 1;
+    // 000000000000 일 때, -1 나오는거 방지하기 위해 10 더함
+    total = sum1 * 3 + sum2 + 10 - 1;
     total = 9 - total % 10;
 
     printf("Check digit: %d\n", total);

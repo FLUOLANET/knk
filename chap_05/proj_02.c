@@ -8,7 +8,10 @@ int main(void) {
     scanf("%d:%d", &hour, &minute);
     printf("Equivalent 12-hour time: ");
 
-    if(hour <= 11 && minute <= 59) {
+    if (hour == 0) {
+        printf("%d:%02d AM\n", hour + 12, minute);
+    }
+    else if(hour < 12) {
         printf("%d:%02d AM\n", hour, minute);
     }
     else if(hour == 12) {
